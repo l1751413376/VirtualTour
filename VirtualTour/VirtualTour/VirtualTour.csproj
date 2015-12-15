@@ -62,6 +62,9 @@
     <Content Include="head.html" />
     <Content Include="Index.html" />
     <Content Include="foot.html" />
+    <Content Include="jianzhu.html" />
+    <Content Include="jingdian.html" />
+    <Content Include="liulan.html" />
     <Content Include="partialview.js" />
     <Content Include="Public\gardenly\images\dongtai.png" />
     <Content Include="Public\gardenly\images\footer.png" />
@@ -113,7 +116,10 @@
     <Content Include="Public\jdjs\x6.gif" />
     <Content Include="Public\jdjs\x7.gif" />
     <Content Include="Public\jquery-1.8.2.js" />
+    <Content Include="shangxi.html" />
+    <Content Include="tese.html" />
     <Content Include="Web.config" />
+    <Content Include="yihu.html" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />

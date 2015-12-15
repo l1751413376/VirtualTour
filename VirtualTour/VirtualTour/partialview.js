@@ -12,7 +12,7 @@ noready();
 //文档加载完毕
 function ready()
 {
-    var els = document.getElementsByTagName("script");
+    var els = document.getElementsByTagName("div");
     for (var i = 0; i < els.length;i++)
     {
         var item = els[i];
