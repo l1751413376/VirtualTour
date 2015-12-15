@@ -9,6 +9,7 @@
     <link href="/Public/gardenly/sub.css" rel="stylesheet" type="text/css">
     <link rel="icon" href="favicon.ico">
     <link rel="shortcut icon" href="favicon.ico">
+    <script src="partialview.js"></script>
     <style type="text/css">
         .innersidebar {
             background: #e8e7e7 url(/Public/gardenly/images/gaikuang-left.png) no-repeat;
@@ -26,37 +27,11 @@
 </head>
 <body>
     <div class="container">
-
-        <div class="header">
-            <div id="home"><a href="/index.php">&nbsp; </a></div>
-            <div class="search">
-                <form action="/index.php/News/search.html" method="post">
-                    <input type="text" name="search" class="searchtext">
-                    <div class="searchTypeDiv">
-                        <select class="searchType" name="searchType">
-                            <option value="1">信息标题</option>
-                        </select>
-                    </div>
-                    <input type="submit" class="searchbtn" value="">
-                </form>
-            </div>
-            <div class="menu">
-                <ul id="jsddm">
-                    <li class="fli"><a href="/index.php/Gaikuang.html">留园概况</a></li>
-                    <li><a href="/index.php/News/cate/page/93.html">留园动态</a></li>
-                    <li><a href="/index.php/Shangxi.html">在线赏析</a></li>
-                    <li><a href="/index.php/Jingdian.html">景点介绍</a></li>
-                    <li><a href="/index.php/Jianzhu.html">建筑艺术</a></li>
-                    <li><a href="/index.php/Liulan.html">游览服务</a></li>
-                    <li><a href="/index.php/Yipu.html">走进艺圃</a></li>
-                    <li><a href="/index.php/Tese.html">特色活动</a></li>
-                </ul>
-            </div>
+        <script _partialview="head.html"></script>
+        <div class="maincontent">
             <div class="flash">
                 <img src="/Public/gardenly/images/gaikuang.png">
             </div>
-        </div>
-        <div class="maincontent">
             <div class="mc-header">
                 <span class="fltlft">首页 &gt; 留园概况 &gt; 留园介绍  </span>
             </div>
@@ -90,24 +65,7 @@
             </div>
             <div class="mc-btm"></div>
         </div>
-        <div class="footer">
-            访问统计   今日：251 
-		总计：32287 
-            <br>
-            苏州市留园管理处 版权所有  &nbsp; 苏ICP备12000510<br>
-            技术支持:苏州晨景信息科技有限公司<br>
-            <div id="loyyy">
-                <script type="text/javascript">
-                    document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/11/181/0000/60394137/CA111810000603941370001.js' type='text/javascript'%3E%3C/script%3E"));
-                </script>
-                <span id="_ideConac"><a href="//bszs.conac.cn/sitename?method=show&amp;id=094AEB2D3887443AE053022819ACDA35" target="_blank">
-                    <img id="imgConac" vspace="0" hspace="0" border="0" src="//dcs.conac.cn/image/blue.png" data-bd-imgshare-binded="1"></a></span><script src="http://dcs.conac.cn/js/11/181/0000/60394137/CA111810000603941370001.js" type="text/javascript"></script><span id="Span1"></span>
-            </div>
-            <div id="loyyy2">
-                <img src="/Public/images/ly_weixin.png" width="90"><br>
-                微信关注
-            </div>
-        </div>
+        <script _partialview="foot.html"></script>
         <!-- end .container -->
     </div>
     <div class="bottombg"></div>
