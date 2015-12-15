@@ -37,10 +37,9 @@ a:hover, a:active, a:focus {
 }
 .header {
 	width:960px;
-	height:244px;
+	/*height:10px;*/
 	padding-top:110px;
 	position:relative;
-	background:url(images/sub-header.png) center no-repeat ;
 }
 #home{
 	position:absolute;
@@ -62,6 +61,7 @@ a:hover, a:active, a:focus {
 	position:relative;
 }
 .mc-header{
+    margin-top:5px;
 	background:url(images/sub-content-header.png) no-repeat;
 	width:747px;
 	height:28px;

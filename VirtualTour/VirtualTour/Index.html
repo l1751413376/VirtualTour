@@ -12,8 +12,6 @@
     <script src="/Public/jquery-1.8.2.js"></script>
     <script src="partialview.js"></script>
     <style type="text/css">
-        <!--
-
         #place {
             overflow: hidden;
             width: 189px;
@@ -41,17 +39,18 @@
 
         #place2 {
         }
-        -->
     </style>
     <script>
       
     </script>
 </head>
-
 <body>
     <div class="container">
         <script _partialview="head.html"></script>
         <div class="maincontent">
+            <div class="flash">
+                <img src="/Public/gardenly/images/jingdian.png">
+            </div>
             <div class="mc-header">
                 <span class="fltlft">首页 &gt; 景点介绍 &gt; 全景导览图  </span>
             </div>
@@ -106,117 +105,97 @@
                             </div>
                         </div>
                     </div>
-                    <script>
-					<!--
-    var speed=100;
-    var tab=document.getElementById("place");
-    var tab1=document.getElementById("place1");
-    var tab2=document.getElementById("place2");
-    tab2.innerHTML=tab1.innerHTML;
-    function Marquee(){
-        if(tab2.offsetHeight-tab.scrollTop<=0)
-            tab.scrollTop-=tab1.offsetHeight
-        else{
-            tab.scrollTop+=2;
-        }
-    }
-    //	var MyMar=setInterval(Marquee,speed);
-    //	tab.onmouseover=function() {clearInterval(MyMar)};
-    //	tab.onmouseout=function() {MyMar=setInterval(Marquee,speed)};
-    var nowImage=$("#place img").first();
-    $("#place img").click(function(){
-        nowImage = $(this);
-        if(tab2.offsetHeight-tab.scrollTop<=0)
-            tab.scrollTop-=tab1.offsetHeight;
-        else{
-            tab.scrollTop+=$(this).offset().top-737;
-        }
-						
-        $("#img").attr("src",$(this).attr("src"));
-        $("#imga").attr("href",$(this).attr("rel"));
-    });
-					
-    var u=false;
-    $("#pmcont").click(function(){
-        if(u){
-            up();
-            nowImage = nowImage.prev();
-        }else{
-            down();
-            nowImage = nowImage.next();
-            /**
-            if(!nowImage){
-                nowImage = $("#place img").first();
-            }
-            **/
-        }
-        $("#img").attr("src",nowImage.attr("src"));
-        $("#imga").attr("href",nowImage.attr("rel"));
-    });
-					
-    $("#pmcont").mousemove(function(e){
-        var positionY=e.pageY-$(this).offset().top;
-        if(positionY<=$(this).height()/2){
-            $(this).css({cursor:"url(/szliuyuan/Public/images/mouseup_is.cur)"});
-            u=true;
-        }else{
-            $(this).css({cursor:"url(/szliuyuan/Public/images/mousedown_is.cur)"});
-            u=false;
-        }
-    });
-					
-    $("#place").bind("mousewheel", function() {
-        if(event.wheelDelta>0){
-            up();
-        }
-        if(event.wheelDelta<0){
-            down();
-        }
-        return false;
-    });				
-    function up(){
-        if(tab2.offsetHeight-tab.scrollTop<=0)
-            tab.scrollTop-=tab1.offsetHeight;
-        else{
-            tab.scrollTop-=126;
-        }
-    }
-    function down(){
-        if(tab2.offsetHeight-tab.scrollTop<=0)
-            tab.scrollTop-=tab1.offsetHeight;
-        else{
-            tab.scrollTop+=126;
-        }
-    }
-    -->
-                    </script>
+
                 </div>
                 <br clear="all">
             </div>
             <div class="mc-btm"></div>
         </div>
-        <div class="footer">
-            访问统计   今日：299 
-		总计：31975 
-            <br>
-            苏州市留园管理处 版权所有  &nbsp; 苏ICP备12000510<br>
-            技术支持:苏州晨景信息科技有限公司<br>
-            <div id="loyyy">
-                <script type="text/javascript">
-                    document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/11/181/0000/60394137/CA111810000603941370001.js' type='text/javascript'%3E%3C/script%3E"));
-                </script>
-                <span id="_ideConac"><a href="//bszs.conac.cn/sitename?method=show&amp;id=094AEB2D3887443AE053022819ACDA35" target="_blank">
-                    <img id="imgConac" vspace="0" hspace="0" border="0" src="//dcs.conac.cn/image/blue.png" data-bd-imgshare-binded="1"></a></span><script src="http://dcs.conac.cn/js/11/181/0000/60394137/CA111810000603941370001.js" type="text/javascript"></script><span id="Span1"></span>
-            </div>
-            <div id="loyyy2">
-                <img src="/Public/images/ly_weixin.png" width="90"><br>
-                微信关注
-            </div>
-        </div>
-
+        <script _partialview="foot.html"></script>
         <!-- end .container -->
     </div>
     <div class="bottombg"></div>
-    
+    <script>
+        var speed = 100;
+        var tab = document.getElementById("place");
+        var tab1 = document.getElementById("place1");
+        var tab2 = document.getElementById("place2");
+        tab2.innerHTML = tab1.innerHTML;
+        function Marquee() {
+            if (tab2.offsetHeight - tab.scrollTop <= 0)
+                tab.scrollTop -= tab1.offsetHeight
+            else {
+                tab.scrollTop += 2;
+            }
+        }
+        //	var MyMar=setInterval(Marquee,speed);
+        //	tab.onmouseover=function() {clearInterval(MyMar)};
+        //	tab.onmouseout=function() {MyMar=setInterval(Marquee,speed)};
+        var nowImage = $("#place img").first();
+        $("#place img").click(function () {
+            nowImage = $(this);
+            if (tab2.offsetHeight - tab.scrollTop <= 0)
+                tab.scrollTop -= tab1.offsetHeight;
+            else {
+                tab.scrollTop += $(this).offset().top - 737;
+            }
+
+            $("#img").attr("src", $(this).attr("src"));
+            $("#imga").attr("href", $(this).attr("rel"));
+        });
+
+        var u = false;
+        $("#pmcont").click(function () {
+            if (u) {
+                up();
+                nowImage = nowImage.prev();
+            } else {
+                down();
+                nowImage = nowImage.next();
+                /**
+                if(!nowImage){
+                    nowImage = $("#place img").first();
+                }
+                **/
+            }
+            $("#img").attr("src", nowImage.attr("src"));
+            $("#imga").attr("href", nowImage.attr("rel"));
+        });
+
+        $("#pmcont").mousemove(function (e) {
+            var positionY = e.pageY - $(this).offset().top;
+            if (positionY <= $(this).height() / 2) {
+                $(this).css({ cursor: "url(/szliuyuan/Public/images/mouseup_is.cur)" });
+                u = true;
+            } else {
+                $(this).css({ cursor: "url(/szliuyuan/Public/images/mousedown_is.cur)" });
+                u = false;
+            }
+        });
+
+        $("#place").bind("mousewheel", function () {
+            if (event.wheelDelta > 0) {
+                up();
+            }
+            if (event.wheelDelta < 0) {
+                down();
+            }
+            return false;
+        });
+        function up() {
+            if (tab2.offsetHeight - tab.scrollTop <= 0)
+                tab.scrollTop -= tab1.offsetHeight;
+            else {
+                tab.scrollTop -= 126;
+            }
+        }
+        function down() {
+            if (tab2.offsetHeight - tab.scrollTop <= 0)
+                tab.scrollTop -= tab1.offsetHeight;
+            else {
+                tab.scrollTop += 126;
+            }
+        }
+    </script>
 </body>
 </html>
