@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{87C3816A-A378-4E96-94C2-08BD10322126}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VirtualTour</RootNamespace>
+    <AssemblyName>VirtualTour</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Index.html" />
+    <Content Include="Public\gardenly\images\footer.png" />
+    <Content Include="Public\gardenly\images\jingdian.png" />
+    <Content Include="Public\gardenly\images\menu-h.png" />
+    <Content Include="Public\gardenly\images\s-bottom.png" />
+    <Content Include="Public\gardenly\images\s-top.png" />
+    <Content Include="Public\gardenly\images\searchbtn.png" />
+    <Content Include="Public\gardenly\images\sub-header.png" />
+    <Content Include="Public\gardenly\images\sub-m-a.png" />
+    <Content Include="Public\gardenly\images\sub-m-h.png" />
+    <Content Include="Public\gardenly\images\visual.png" />
+    <Content Include="Public\gardenly\sub.css" />
+    <Content Include="Public\images\ly_weixin.png" />
+    <Content Include="Public\jdjs\1.gif" />
+    <Content Include="Public\jdjs\10.gif" />
+    <Content Include="Public\jdjs\11.gif" />
+    <Content Include="Public\jdjs\12.gif" />
+    <Content Include="Public\jdjs\2.gif" />
+    <Content Include="Public\jdjs\3.gif" />
+    <Content Include="Public\jdjs\4.gif" />
+    <Content Include="Public\jdjs\5.gif" />
+    <Content Include="Public\jdjs\6.gif" />
+    <Content Include="Public\jdjs\7.gif" />
+    <Content Include="Public\jdjs\8.gif" />
+    <Content Include="Public\jdjs\9.gif" />
+    <Content Include="Public\jdjs\d1.gif" />
+    <Content Include="Public\jdjs\d10.gif" />
+    <Content Include="Public\jdjs\d11.gif" />
+    <Content Include="Public\jdjs\d12.gif" />
+    <Content Include="Public\jdjs\d13.gif" />
+    <Content Include="Public\jdjs\d14.gif" />
+    <Content Include="Public\jdjs\d2.gif" />
+    <Content Include="Public\jdjs\d3.gif" />
+    <Content Include="Public\jdjs\d4.gif" />
+    <Content Include="Public\jdjs\d5.gif" />
+    <Content Include="Public\jdjs\d6.gif" />
+    <Content Include="Public\jdjs\d7.gif" />
+    <Content Include="Public\jdjs\d8.gif" />
+    <Content Include="Public\jdjs\d9.gif" />
+    <Content Include="Public\jdjs\x1.gif" />
+    <Content Include="Public\jdjs\x2.gif" />
+    <Content Include="Public\jdjs\x3.gif" />
+    <Content Include="Public\jdjs\x4.gif" />
+    <Content Include="Public\jdjs\x5.gif" />
+    <Content Include="Public\jdjs\x6.gif" />
+    <Content Include="Public\jdjs\x7.gif" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:20071/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
