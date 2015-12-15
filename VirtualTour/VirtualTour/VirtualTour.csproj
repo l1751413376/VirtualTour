@@ -57,13 +57,22 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="93.html" />
+    <Content Include="gaikuang.html" />
+    <Content Include="head.html" />
     <Content Include="Index.html" />
+    <Content Include="foot.html" />
+    <Content Include="partialview.js" />
+    <Content Include="Public\gardenly\images\dongtai.png" />
     <Content Include="Public\gardenly\images\footer.png" />
+    <Content Include="Public\gardenly\images\gaikuang-left.png" />
+    <Content Include="Public\gardenly\images\gaikuang.png" />
     <Content Include="Public\gardenly\images\jingdian.png" />
     <Content Include="Public\gardenly\images\menu-h.png" />
     <Content Include="Public\gardenly\images\s-bottom.png" />
     <Content Include="Public\gardenly\images\s-top.png" />
     <Content Include="Public\gardenly\images\searchbtn.png" />
+    <Content Include="Public\gardenly\images\sub-content-header.png" />
     <Content Include="Public\gardenly\images\sub-header.png" />
     <Content Include="Public\gardenly\images\sub-m-a.png" />
     <Content Include="Public\gardenly\images\sub-m-h.png" />
@@ -103,6 +112,7 @@
     <Content Include="Public\jdjs\x5.gif" />
     <Content Include="Public\jdjs\x6.gif" />
     <Content Include="Public\jdjs\x7.gif" />
+    <Content Include="Public\jquery-1.8.2.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

@@ -9,7 +9,8 @@
     <link href="/Public/gardenly/sub.css?v=1" rel="stylesheet" type="text/css">
     <link rel="icon" href="favicon.ico">
     <link rel="shortcut icon" href="favicon.ico">
-    <script src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+    <script src="/Public/jquery-1.8.2.js"></script>
+    <script src="partialview.js"></script>
     <style type="text/css">
         <!--
 
@@ -42,40 +43,14 @@
         }
         -->
     </style>
+    <script>
+      
+    </script>
 </head>
 
 <body>
     <div class="container">
-
-        <div class="header">
-            <div id="home"><a href="/index.php">&nbsp; </a></div>
-            <div class="search">
-                <form action="/index.php/News/search.html" method="post">
-                    <input type="text" name="search" class="searchtext">
-                    <div class="searchTypeDiv">
-                        <select class="searchType" name="searchType">
-                            <option value="1">信息标题</option>
-                        </select>
-                    </div>
-                    <input type="submit" class="searchbtn" value="">
-                </form>
-            </div>
-            <div class="menu">
-                <ul id="jsddm">
-                    <li class="fli"><a href="/index.php/Gaikuang.html">留园概况</a></li>
-                    <li><a href="/index.php/News/cate/page/93.html">留园动态</a></li>
-                    <li><a href="/index.php/Shangxi.html">在线赏析</a></li>
-                    <li><a href="/index.php/Jingdian.html">景点介绍</a></li>
-                    <li><a href="/index.php/Jianzhu.html">建筑艺术</a></li>
-                    <li><a href="/index.php/Liulan.html">游览服务</a></li>
-                    <li><a href="/index.php/Yipu.html">走进艺圃</a></li>
-                    <li><a href="/index.php/Tese.html">特色活动</a></li>
-                </ul>
-            </div>
-            <div class="flash">
-                <img src="/Public/gardenly/images/jingdian.png">
-            </div>
-        </div>
+        <script _partialview="head.html"></script>
         <div class="maincontent">
             <div class="mc-header">
                 <span class="fltlft">首页 &gt; 景点介绍 &gt; 全景导览图  </span>
@@ -97,10 +72,10 @@
                                 <tbody>
                                     <tr>
                                         <td valign="middle">
-                                            <div style="margin:0 auto; width:250px;">
-                                            <a id="imga" href="/index.php/jingdian/pic/page/118/i/33.html">
-                                                <img id="img" src="/Public/jdjs/x7.gif" style="max-height:300px;" border="0"></a>
-                                                </div>
+                                            <div style="margin: 0 auto; width: 250px;">
+                                                <a id="imga" href="/index.php/jingdian/pic/page/118/i/33.html">
+                                                    <img id="img" src="/Public/jdjs/x7.gif" style="max-height: 300px;" border="0"></a>
+                                            </div>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -198,8 +173,7 @@
             down();
         }
         return false;
-    });
-						
+    });				
     function up(){
         if(tab2.offsetHeight-tab.scrollTop<=0)
             tab.scrollTop-=tab1.offsetHeight;
@@ -243,5 +217,6 @@
         <!-- end .container -->
     </div>
     <div class="bottombg"></div>
+    
 </body>
 </html>
