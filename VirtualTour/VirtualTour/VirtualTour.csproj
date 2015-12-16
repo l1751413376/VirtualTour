@@ -70,7 +70,12 @@
     <Content Include="Public\gardenly\images\footer.png" />
     <Content Include="Public\gardenly\images\gaikuang-left.png" />
     <Content Include="Public\gardenly\images\gaikuang.png" />
+    <Content Include="Public\gardenly\images\jianzhu-left.png" />
+    <Content Include="Public\gardenly\images\jianzhu.png" />
     <Content Include="Public\gardenly\images\jingdian.png" />
+    <Content Include="Public\gardenly\images\left-bar.png" />
+    <Content Include="Public\gardenly\images\llfw-left.png" />
+    <Content Include="Public\gardenly\images\llfw.png" />
     <Content Include="Public\gardenly\images\menu-h.png" />
     <Content Include="Public\gardenly\images\s-bottom.png" />
     <Content Include="Public\gardenly\images\s-top.png" />
@@ -79,7 +84,12 @@
     <Content Include="Public\gardenly\images\sub-header.png" />
     <Content Include="Public\gardenly\images\sub-m-a.png" />
     <Content Include="Public\gardenly\images\sub-m-h.png" />
+    <Content Include="Public\gardenly\images\tese.jpg" />
     <Content Include="Public\gardenly\images\visual.png" />
+    <Content Include="Public\gardenly\images\yipu-left.png" />
+    <Content Include="Public\gardenly\images\yipu.png" />
+    <Content Include="Public\gardenly\images\zxjs.png" />
+    <Content Include="Public\gardenly\images\zxsx-left.png" />
     <Content Include="Public\gardenly\sub.css" />
     <Content Include="Public\images\ly_weixin.png" />
     <Content Include="Public\jdjs\1.gif" />
@@ -119,7 +129,7 @@
     <Content Include="shangxi.html" />
     <Content Include="tese.html" />
     <Content Include="Web.config" />
-    <Content Include="yihu.html" />
+    <Content Include="yipu.html" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
